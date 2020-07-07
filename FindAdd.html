@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<style>
+   button{ width: 100%;}
+   button{ padding: 12px 20px;}
+   button{ margin: 8px 0;}
+   button{ display: inline-block;}
+   button{ border: 1px solid #ccc;}
+   button{ border-radius: 4px;}
+   button{ box-sizing: border-box;}
+</style>
+<style>
+  table{background-color: lightyellow;}
+  table{padding: 20px;}
+</style>  
+<head>
+  <title>Consumiendo ServiceWeb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <script src="findall.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Consumiendo servicios web</h1>
+    <p class="well">from: <a>http://localhost:8080/CategoryRestService/FindAdd</a></p>
+</div>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th> 
+        <th scope="col">Fecha Creación</th>
+        <th scope="col">Fecha Actualización</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" class="id">1</th>
+        <td class="c-date">2020-07-07</td>
+        <td class="a-date">2020-07-07</td>
+        <td class="name">Luis</td>
+        <td class="description">CS</td>
+      </tr>
+      <tr>
+        <th scope="row" class="id">2</th>
+        <td class="c-date">2020-07-07</td>
+        <td class="a-date">2020-07-07</td>
+        <td class="name">Manuel</td>
+        <td class="description">Arqui</td>
+      </tr>
+      <tr>
+        <th scope="row" class="id">3</th>
+        <td class="c-date">2020-07-07</td>
+        <td class="a-date">2020-07-07</td>
+        <td class="name">Coco</td>
+        <td class="description">artes</td>
+      </tr>
+      <tr>
+        <th scope="row" class="id">4</th>
+        <td class="c-date">2020-07-07</td>
+        <td class="a-date">2020-07-07</td>
+        <td class="name">Margot</td>
+        <td class="description">filosofia</td>
+      </tr>
+      <div> 
+          <button id="button" class="button" onclick="add(row);">Añadir</button>
+      </div>
+    </tbody>
+  </table> 
+</div>
+
+</body>
+</html>
