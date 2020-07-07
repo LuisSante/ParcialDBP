@@ -1,7 +1,7 @@
 $(document).ready(function() {
 		
  		$.ajax({
-        	url: "http://localhost:8080/CategoryRestService/FindAll"
+        	url: "http://localhost:8080/CategoryRestService/FindAdd"
     	}).then(function(data) {
 
 		$('#bt_add').click(function(){
